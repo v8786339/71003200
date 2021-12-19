@@ -1,0 +1,175 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 01 18:01:14 2017
+# Process ID: 35304
+# Current directory: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35592 E:\workspace\KXZ7C01\DDR3_Mem_900MHz\vivado_proj\ddr3_memtest.xpr
+# Log file: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/vivado.log
+# Journal file: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.xpr
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:ip:mig_7series:4.0 [get_ips  mig_7series_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips mig_7series_0] -no_script -sync -force -quiet
+generate_target all [get_files  E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+catch { config_ip_cache -export [get_ips -all mig_7series_0] }
+export_ip_user_files -of_objects [get_files E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+launch_runs -jobs 4 mig_7series_0_synth_1
+export_simulation -of_objects [get_files E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files/sim_scripts -ip_user_files_dir E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files -ipstatic_source_dir E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/modelsim} {questa=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/questa} {riviera=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/riviera} {activehdl=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+set_property -dict [list CONFIG.XML_INPUT_FILE {mig_b.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips mig_7series_0]
+generate_target {instantiation_template} [get_files e:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+generate_target all [get_files  E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+catch { config_ip_cache -export [get_ips -all mig_7series_0] }
+export_ip_user_files -of_objects [get_files E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+reset_run mig_7series_0_synth_1
+launch_runs -jobs 4 mig_7series_0_synth_1
+export_simulation -of_objects [get_files E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files/sim_scripts -ip_user_files_dir E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files -ipstatic_source_dir E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/modelsim} {questa=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/questa} {riviera=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/riviera} {activehdl=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+report_ip_status -name ip_status 
+open_run synth_1 -name synth_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {dbg_s_axi_rdata[0]} {dbg_s_axi_rdata[1]} {dbg_s_axi_rdata[2]} {dbg_s_axi_rdata[3]} {dbg_s_axi_rdata[4]} {dbg_s_axi_rdata[5]} {dbg_s_axi_rdata[6]} {dbg_s_axi_rdata[7]} {dbg_s_axi_rdata[8]} {dbg_s_axi_rdata[9]} {dbg_s_axi_rdata[10]} {dbg_s_axi_rdata[11]} {dbg_s_axi_rdata[12]} {dbg_s_axi_rdata[13]} {dbg_s_axi_rdata[14]} {dbg_s_axi_rdata[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 30 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {dbg_s_axi_araddr[0]} {dbg_s_axi_araddr[1]} {dbg_s_axi_araddr[2]} {dbg_s_axi_araddr[3]} {dbg_s_axi_araddr[4]} {dbg_s_axi_araddr[5]} {dbg_s_axi_araddr[6]} {dbg_s_axi_araddr[7]} {dbg_s_axi_araddr[8]} {dbg_s_axi_araddr[9]} {dbg_s_axi_araddr[10]} {dbg_s_axi_araddr[11]} {dbg_s_axi_araddr[12]} {dbg_s_axi_araddr[13]} {dbg_s_axi_araddr[14]} {dbg_s_axi_araddr[15]} {dbg_s_axi_araddr[16]} {dbg_s_axi_araddr[17]} {dbg_s_axi_araddr[18]} {dbg_s_axi_araddr[19]} {dbg_s_axi_araddr[20]} {dbg_s_axi_araddr[21]} {dbg_s_axi_araddr[22]} {dbg_s_axi_araddr[23]} {dbg_s_axi_araddr[24]} {dbg_s_axi_araddr[25]} {dbg_s_axi_araddr[26]} {dbg_s_axi_araddr[27]} {dbg_s_axi_araddr[28]} {dbg_s_axi_araddr[29]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 30 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {dbg_s_axi_awaddr[0]} {dbg_s_axi_awaddr[1]} {dbg_s_axi_awaddr[2]} {dbg_s_axi_awaddr[3]} {dbg_s_axi_awaddr[4]} {dbg_s_axi_awaddr[5]} {dbg_s_axi_awaddr[6]} {dbg_s_axi_awaddr[7]} {dbg_s_axi_awaddr[8]} {dbg_s_axi_awaddr[9]} {dbg_s_axi_awaddr[10]} {dbg_s_axi_awaddr[11]} {dbg_s_axi_awaddr[12]} {dbg_s_axi_awaddr[13]} {dbg_s_axi_awaddr[14]} {dbg_s_axi_awaddr[15]} {dbg_s_axi_awaddr[16]} {dbg_s_axi_awaddr[17]} {dbg_s_axi_awaddr[18]} {dbg_s_axi_awaddr[19]} {dbg_s_axi_awaddr[20]} {dbg_s_axi_awaddr[21]} {dbg_s_axi_awaddr[22]} {dbg_s_axi_awaddr[23]} {dbg_s_axi_awaddr[24]} {dbg_s_axi_awaddr[25]} {dbg_s_axi_awaddr[26]} {dbg_s_axi_awaddr[27]} {dbg_s_axi_awaddr[28]} {dbg_s_axi_awaddr[29]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {dbg_s_axi_wdata[0]} {dbg_s_axi_wdata[1]} {dbg_s_axi_wdata[2]} {dbg_s_axi_wdata[3]} {dbg_s_axi_wdata[4]} {dbg_s_axi_wdata[5]} {dbg_s_axi_wdata[6]} {dbg_s_axi_wdata[7]} {dbg_s_axi_wdata[8]} {dbg_s_axi_wdata[9]} {dbg_s_axi_wdata[10]} {dbg_s_axi_wdata[11]} {dbg_s_axi_wdata[12]} {dbg_s_axi_wdata[13]} {dbg_s_axi_wdata[14]} {dbg_s_axi_wdata[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {dbg_SM[0]} {dbg_SM[1]} {dbg_SM[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 25 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {dbg_error_cnt[0]} {dbg_error_cnt[1]} {dbg_error_cnt[2]} {dbg_error_cnt[3]} {dbg_error_cnt[4]} {dbg_error_cnt[5]} {dbg_error_cnt[6]} {dbg_error_cnt[7]} {dbg_error_cnt[8]} {dbg_error_cnt[9]} {dbg_error_cnt[10]} {dbg_error_cnt[11]} {dbg_error_cnt[12]} {dbg_error_cnt[13]} {dbg_error_cnt[14]} {dbg_error_cnt[15]} {dbg_error_cnt[16]} {dbg_error_cnt[17]} {dbg_error_cnt[18]} {dbg_error_cnt[19]} {dbg_error_cnt[20]} {dbg_error_cnt[21]} {dbg_error_cnt[22]} {dbg_error_cnt[23]} {dbg_error_cnt[24]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list dbg_app_reset ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list dbg_init_calib_complete ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list dbg_mmcm_locked ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list dbg_s_axi_arready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list dbg_s_axi_arvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list dbg_s_axi_awready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list dbg_s_axi_awvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list dbg_s_axi_rlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list dbg_s_axi_rready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list dbg_s_axi_rvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list dbg_s_axi_wlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list dbg_s_axi_wready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list dbg_s_axi_wvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list dbg_sys_reset ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000013ccf2fa01]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/000013ccf2fa01]
+open_hw_target
+set_property PROGRAM.FILE {E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/TestDemo.bit} [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROBES.FILE {E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z100_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROBES.FILE {E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROGRAM.FILE {E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/TestDemo.bit} [lindex [get_hw_devices xc7z100_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z100_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+close_hw

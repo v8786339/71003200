@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# 
+# Start of session at: Sun Dec 03 12:38:58 2017
+# Process ID: 35992
+# Current directory: E:/workspace/KXZ7C01/SoC_Embedded_Design_MemTest/design/PS_Embedded_Design.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: E:/workspace/KXZ7C01/SoC_Embedded_Design_MemTest/design/PS_Embedded_Design.sdk/webtalk/webtalk.log
+# Journal file: E:/workspace/KXZ7C01/SoC_Embedded_Design_MemTest/design/PS_Embedded_Design.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

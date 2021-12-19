@@ -1,0 +1,37 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sat Feb  6 00:45:05 2021
+| Host         : dereck running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z100ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mig_7series_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mig_7series_0 (xilinx.com:ip:mig_7series:4.0) from (Rev. 2) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Wed Nov 01 18:02:04 2017
+| Host         : E6HIM2ZJ5N6O1R6 running 64-bit Service Pack 1  (build 7601)
+| Command      : upgrade_ip
+| Device       : xc7z100ffg900-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mig_7series_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mig_7series_0 (xilinx.com:ip:mig_7series:4.0) from (Rev. 1) to (Rev. 2)
+

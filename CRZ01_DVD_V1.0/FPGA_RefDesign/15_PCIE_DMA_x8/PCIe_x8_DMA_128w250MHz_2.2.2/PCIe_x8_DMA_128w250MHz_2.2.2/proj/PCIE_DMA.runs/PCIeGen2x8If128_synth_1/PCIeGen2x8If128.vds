@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jan 16 22:34:39 2020
+# Process ID: 6836
+# Current directory: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/15_PCIE_DMA_x8/PCIe_x8_DMA_128w250MHz_2.2.2/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/PCIeGen2x8If128_synth_1
+# Command line: vivado.exe -log PCIeGen2x8If128.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PCIeGen2x8If128.tcl
+# Log file: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/15_PCIE_DMA_x8/PCIe_x8_DMA_128w250MHz_2.2.2/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/PCIeGen2x8If128_synth_1/PCIeGen2x8If128.vds
+# Journal file: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/15_PCIE_DMA_x8/PCIe_x8_DMA_128w250MHz_2.2.2/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/PCIeGen2x8If128_synth_1\vivado.jou
+#-----------------------------------------------------------
+source PCIeGen2x8If128.tcl -notrace
+Command: synth_design -top PCIeGen2x8If128 -part xc7z100ffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z100'
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-680] Path length exceeds 260-Byte maximum allowed by Windows: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/15_PCIE_DMA_x8/PCIe_x8_DMA_128w250MHz_2.2.2/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/PCIeGen2x8If128_synth_1/D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/15_PCIE_DMA_x8/PCIe_x8_DMA_128w250MHz_2.2.2/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/PCIeGen2x8If128_synth_1/.Xil/Vivado-6836-HIH-D-6446/realtime\PCIeGen2x8If128.tcl
+Please consider using the OS subst command to shorten the path length by mapping part of the path to a virtual drive letter. See Answer Record AR52787 for more information.
+Resolution: In Windows 7 or later, the mklink command can also be used to create a symbolic link and shorten the path.
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 16 22:34:46 2020...

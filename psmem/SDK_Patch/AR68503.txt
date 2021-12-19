@@ -1,0 +1,27 @@
+https://www.xilinx.com/support/answers/68503.html
+
+AR# 68503
+2016.4 - SDK - GDB/XMD debug will not work for Zynq designs created using Vivado 2016.4
+
+Description
+
+GDB/XMD debug will not work for the Zynq designs created using Vivado 2016.4.
+
+This is due to the "-force" option added to the mwr command in the ps7_init.tcl file for new 2016.4 Vivado based designs.
+
+This "-force" option is not supported for the mwr command in XMD. As a result, the GDB Debug flow is not working for Zynq designs.
+
+How can I resolve this issue?
+Solution
+
+Replace the xmdterm.tcl file in your SDK installation with the attached xmdterm.tcl.
+
+The xmdterm.tcl file can be found in the following location in the SDK install:
+
+<SDK_installation_directory>/SDK/2016.4/scripts/xmd/xmdterm.tcl
+
+Note:
+
+Make sure to delete the old xmdterm.tcl before copying the attached Tcl file.
+
+Re-open the SDK workspace to have the changes applied.

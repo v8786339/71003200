@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jan 25 14:44:39 2020
+# Process ID: 6484
+# Current directory: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6804 D:\BaiduNetdiskDownload\crz01\CRZ01_DVD_V1.0\CRZ01_DVD_V1.0\CRZ01_DVD_V1.0\FPGA_RefDesign\12_IBERT_SFP_FiberModule_10G\IBERT_SFP_FiberModule_10G\ipcore\IBERT_SATA_10G.xpr
+# Log file: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore'
+INFO: [Project 1-313] Project file moved from 'E:/workspace/KXZ7C01/ProductCD/IBERT_SATA_10G/ipcore' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'IBERT_SATA_10G' is locked:
+* IP definition 'IBERT 7 Series GTX (3.0)' for IP 'IBERT_SATA_10G' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Project 1-230] Project 'IBERT_SATA_10G.xpr' upgraded for this version of Vivado.
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:ip:ibert_7series_gtx:3.0 [get_ips  IBERT_SATA_10G] -log ip_upgrade.log
+Upgrading 'IBERT_SATA_10G'
+INFO: [IP_Flow 19-3422] Upgraded IBERT_SATA_10G (IBERT 7 Series GTX 3.0) from revision 15 to revision 16
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IBERT_SATA_10G'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips IBERT_SATA_10G] -no_script -sync -force -quiet
+generate_target all [get_files  D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.srcs/sources_1/ip/IBERT_SATA_10G/IBERT_SATA_10G.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IBERT_SATA_10G'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IBERT_SATA_10G'...
+export_ip_user_files -of_objects [get_files D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.srcs/sources_1/ip/IBERT_SATA_10G/IBERT_SATA_10G.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.srcs/sources_1/ip/IBERT_SATA_10G/IBERT_SATA_10G.xci] -directory D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.ip_user_files/sim_scripts -ip_user_files_dir D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.ip_user_files -ipstatic_source_dir D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.cache/compile_simlib/modelsim} {questa=D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.cache/compile_simlib/questa} {riviera=D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.cache/compile_simlib/riviera} {activehdl=D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/12_IBERT_SFP_FiberModule_10G/IBERT_SFP_FiberModule_10G/ipcore/IBERT_SATA_10G.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 25 14:51:46 2020...

@@ -1,0 +1,331 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 01 18:01:14 2017
+# Process ID: 35304
+# Current directory: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35592 E:\workspace\KXZ7C01\DDR3_Mem_900MHz\vivado_proj\ddr3_memtest.xpr
+# Log file: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/vivado.log
+# Journal file: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.xpr
+INFO: [Project 1-313] Project file moved from 'R:/workspace/KXZ7C100/DDR3_Mem_933MHz/vivado_proj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'mig_7series_0' is locked:
+* IP definition 'Memory Interface Generator (MIG 7 Series) (4.0)' for IP 'mig_7series_0' (customized with software release 2016.3) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:ip:mig_7series:4.0 [get_ips  mig_7series_0] -log ip_upgrade.log
+Upgrading 'mig_7series_0'
+INFO: [IP_Flow 19-3422] Upgraded mig_7series_0 (Memory Interface Generator (MIG 7 Series) 4.0) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 915.238 ; gain = 6.621
+export_ip_user_files -of_objects [get_ips mig_7series_0] -no_script -sync -force -quiet
+generate_target all [get_files  E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+catch { config_ip_cache -export [get_ips -all mig_7series_0] }
+export_ip_user_files -of_objects [get_files E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+launch_runs -jobs 4 mig_7series_0_synth_1
+[Wed Nov 01 18:02:11 2017] Launched mig_7series_0_synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/mig_7series_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files/sim_scripts -ip_user_files_dir E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files -ipstatic_source_dir E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/modelsim} {questa=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/questa} {riviera=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/riviera} {activehdl=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+set_property -dict [list CONFIG.XML_INPUT_FILE {mig_b.prj} CONFIG.RESET_BOARD_INTERFACE {Custom} CONFIG.MIG_DONT_TOUCH_PARAM {Custom} CONFIG.BOARD_MIG_PARAM {Custom}] [get_ips mig_7series_0]
+generate_target {instantiation_template} [get_files e:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+generate_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 971.438 ; gain = 0.000
+generate_target all [get_files  E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+generate_target: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 971.438 ; gain = 0.000
+catch { config_ip_cache -export [get_ips -all mig_7series_0] }
+export_ip_user_files -of_objects [get_files E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -no_script -sync -force -quiet
+reset_run mig_7series_0_synth_1
+launch_runs -jobs 4 mig_7series_0_synth_1
+[Wed Nov 01 18:07:13 2017] Launched mig_7series_0_synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/mig_7series_0_synth_1/runme.log
+export_simulation -of_objects [get_files E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci] -directory E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files/sim_scripts -ip_user_files_dir E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files -ipstatic_source_dir E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/modelsim} {questa=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/questa} {riviera=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/riviera} {activehdl=E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed Nov 01 18:08:36 2017] Launched mig_7series_0_synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/mig_7series_0_synth_1/runme.log
+[Wed Nov 01 18:08:36 2017] Launched synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/synth_1/runme.log
+report_ip_status -name ip_status 
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z100ffg900-2
+INFO: [Project 1-454] Reading design checkpoint 'E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'u_mig_7series_0'
+INFO: [Netlist 29-17] Analyzing 612 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+Finished Parsing XDC File [e:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+Parsing XDC File [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'SysCLK_200M_IN' completely overrides clock 'SysCLK_200M_P'.
+New: create_clock -period 5.000 -name SysCLK_200M_IN -waveform {0.000 2.500} [get_ports SysCLK_200M_P], [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:29]
+Previous: create_clock -period 4.999 [get_ports SysCLK_200M_P], [e:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:26]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+WARNING: [Vivado 12-584] No ports matched 'push_button_i'. [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'push_button_i'. [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mode_select'. [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'mode_select'. [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 262 instances were transformed.
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 4 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 32 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 225 instances
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1512.059 ; gain = 488.535
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Nov 01 18:12:47 2017] Launched synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z100ffg900-2
+INFO: [Project 1-454] Reading design checkpoint 'E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.dcp' for cell 'u_mig_7series_0'
+INFO: [Netlist 29-17] Analyzing 612 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+Finished Parsing XDC File [e:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc] for cell 'u_mig_7series_0'
+Parsing XDC File [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'SysCLK_200M_IN' completely overrides clock 'SysCLK_200M_P'.
+New: create_clock -period 5.000 -name SysCLK_200M_IN -waveform {0.000 2.500} [get_ports SysCLK_200M_P], [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc:29]
+Previous: create_clock -period 4.999 [get_ports SysCLK_200M_P], [e:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc:26]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+Finished Parsing XDC File [E:/workspace/KXZ7C01/DDR3_Mem_900MHz/src/TestDDR.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.srcs/sources_1/ip/mig_7series_0/mig_7series_0.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 262 instances were transformed.
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 4 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 32 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 225 instances
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1535.391 ; gain = 13.551
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/CLK ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {dbg_s_axi_rdata[0]} {dbg_s_axi_rdata[1]} {dbg_s_axi_rdata[2]} {dbg_s_axi_rdata[3]} {dbg_s_axi_rdata[4]} {dbg_s_axi_rdata[5]} {dbg_s_axi_rdata[6]} {dbg_s_axi_rdata[7]} {dbg_s_axi_rdata[8]} {dbg_s_axi_rdata[9]} {dbg_s_axi_rdata[10]} {dbg_s_axi_rdata[11]} {dbg_s_axi_rdata[12]} {dbg_s_axi_rdata[13]} {dbg_s_axi_rdata[14]} {dbg_s_axi_rdata[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 30 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {dbg_s_axi_araddr[0]} {dbg_s_axi_araddr[1]} {dbg_s_axi_araddr[2]} {dbg_s_axi_araddr[3]} {dbg_s_axi_araddr[4]} {dbg_s_axi_araddr[5]} {dbg_s_axi_araddr[6]} {dbg_s_axi_araddr[7]} {dbg_s_axi_araddr[8]} {dbg_s_axi_araddr[9]} {dbg_s_axi_araddr[10]} {dbg_s_axi_araddr[11]} {dbg_s_axi_araddr[12]} {dbg_s_axi_araddr[13]} {dbg_s_axi_araddr[14]} {dbg_s_axi_araddr[15]} {dbg_s_axi_araddr[16]} {dbg_s_axi_araddr[17]} {dbg_s_axi_araddr[18]} {dbg_s_axi_araddr[19]} {dbg_s_axi_araddr[20]} {dbg_s_axi_araddr[21]} {dbg_s_axi_araddr[22]} {dbg_s_axi_araddr[23]} {dbg_s_axi_araddr[24]} {dbg_s_axi_araddr[25]} {dbg_s_axi_araddr[26]} {dbg_s_axi_araddr[27]} {dbg_s_axi_araddr[28]} {dbg_s_axi_araddr[29]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 30 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {dbg_s_axi_awaddr[0]} {dbg_s_axi_awaddr[1]} {dbg_s_axi_awaddr[2]} {dbg_s_axi_awaddr[3]} {dbg_s_axi_awaddr[4]} {dbg_s_axi_awaddr[5]} {dbg_s_axi_awaddr[6]} {dbg_s_axi_awaddr[7]} {dbg_s_axi_awaddr[8]} {dbg_s_axi_awaddr[9]} {dbg_s_axi_awaddr[10]} {dbg_s_axi_awaddr[11]} {dbg_s_axi_awaddr[12]} {dbg_s_axi_awaddr[13]} {dbg_s_axi_awaddr[14]} {dbg_s_axi_awaddr[15]} {dbg_s_axi_awaddr[16]} {dbg_s_axi_awaddr[17]} {dbg_s_axi_awaddr[18]} {dbg_s_axi_awaddr[19]} {dbg_s_axi_awaddr[20]} {dbg_s_axi_awaddr[21]} {dbg_s_axi_awaddr[22]} {dbg_s_axi_awaddr[23]} {dbg_s_axi_awaddr[24]} {dbg_s_axi_awaddr[25]} {dbg_s_axi_awaddr[26]} {dbg_s_axi_awaddr[27]} {dbg_s_axi_awaddr[28]} {dbg_s_axi_awaddr[29]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {dbg_s_axi_wdata[0]} {dbg_s_axi_wdata[1]} {dbg_s_axi_wdata[2]} {dbg_s_axi_wdata[3]} {dbg_s_axi_wdata[4]} {dbg_s_axi_wdata[5]} {dbg_s_axi_wdata[6]} {dbg_s_axi_wdata[7]} {dbg_s_axi_wdata[8]} {dbg_s_axi_wdata[9]} {dbg_s_axi_wdata[10]} {dbg_s_axi_wdata[11]} {dbg_s_axi_wdata[12]} {dbg_s_axi_wdata[13]} {dbg_s_axi_wdata[14]} {dbg_s_axi_wdata[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {dbg_SM[0]} {dbg_SM[1]} {dbg_SM[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 25 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {dbg_error_cnt[0]} {dbg_error_cnt[1]} {dbg_error_cnt[2]} {dbg_error_cnt[3]} {dbg_error_cnt[4]} {dbg_error_cnt[5]} {dbg_error_cnt[6]} {dbg_error_cnt[7]} {dbg_error_cnt[8]} {dbg_error_cnt[9]} {dbg_error_cnt[10]} {dbg_error_cnt[11]} {dbg_error_cnt[12]} {dbg_error_cnt[13]} {dbg_error_cnt[14]} {dbg_error_cnt[15]} {dbg_error_cnt[16]} {dbg_error_cnt[17]} {dbg_error_cnt[18]} {dbg_error_cnt[19]} {dbg_error_cnt[20]} {dbg_error_cnt[21]} {dbg_error_cnt[22]} {dbg_error_cnt[23]} {dbg_error_cnt[24]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list dbg_app_reset ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list dbg_init_calib_complete ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list dbg_mmcm_locked ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list dbg_s_axi_arready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list dbg_s_axi_arvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list dbg_s_axi_awready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list dbg_s_axi_awvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list dbg_s_axi_rlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list dbg_s_axi_rready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list dbg_s_axi_rvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list dbg_s_axi_wlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list dbg_s_axi_wready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list dbg_s_axi_wvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list dbg_sys_reset ]]
+save_constraints
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1535.391 ; gain = 0.000
+[Wed Nov 01 18:17:28 2017] Launched impl_1...
+Run output will be captured here: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/runme.log
+close_design
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000013ccf2fa01]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/000013ccf2fa01]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013ccf2fa01
+set_property PROGRAM.FILE {E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/TestDemo.bit} [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROBES.FILE {E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z100_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+INFO: [Labtools 27-1434] Device xc7z100 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z100_1 and the probes file(s) E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/debug_nets.ltx.
+The device design has 0 ILA core(s) and 0 VIO core(s). The probes file(s) have 1 ILA core(s) and 0 VIO core(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROGRAM.FILE {E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/impl_1/TestDemo.bit} [lindex [get_hw_devices xc7z100_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z100_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1535.391 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+INFO: [Labtools 27-2302] Device xc7z100 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-01 18:30:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-01 18:30:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-01 18:30:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-01 18:30:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-01 18:30:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-01 18:30:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-01 18:30:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-01 18:30:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-01 18:31:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-01 18:31:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-01 18:31:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-01 18:31:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-01 18:31:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-01 18:31:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2017-Nov-01 18:31:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z100_1] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2017-Nov-01 18:31:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 01 18:31:42 2017...

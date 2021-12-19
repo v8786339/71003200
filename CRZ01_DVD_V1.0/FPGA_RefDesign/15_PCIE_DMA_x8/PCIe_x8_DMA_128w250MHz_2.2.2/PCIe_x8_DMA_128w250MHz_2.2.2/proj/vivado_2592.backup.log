@@ -1,0 +1,439 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Dec 22 18:51:17 2017
+# Process ID: 2592
+# Current directory: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4500 E:\workspace\KXZ7C01\ProductCD\PCIE\PCIe_x8_DMA_128w250MHz_2.2.2\proj\PCIE_DMA.xpr
+# Log file: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/vivado.log
+# Journal file: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/gvi_pcie_kxz7c100_gen2x8.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_clock.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_adapter_pcie_7x_v2_1.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/clk_wiz_v3_6.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/riffa_endpoint.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie2_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/chnl_tester.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/riffa_endpoint_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/riffa_endpoint_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/riffa_endpoint_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/translation_layer.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_core_top.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/channel_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/channel_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/channel_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_engine_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_engine_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_engine_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/interrupt.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/translation_layer_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/translation_layer_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/demux_1_to_n.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/recv_credit_flow_ctrl.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/translation_layer_32.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_wrapper.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_pipe_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/reorder_queue.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_upper_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_upper_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_upper_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_engine_req.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_rx_valid_filter_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/interrupt_controller.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_lower_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_lower_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_lower_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_qword_aligner_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_qword_aligner_64.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_channel_gate.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_rx.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_tx.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_common.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_bram_top_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/reorder_queue_input.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_wrapper.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_eq.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/async_fifo_fwft.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_buffer_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_buffer_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_buffer_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_channel_gate_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_channel_gate_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_channel_gate_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_pipe_drp.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_pipe_rate.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_pipe_reset.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_pipe_lane.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_pipe_misc.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_drp.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_rate.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_reset.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_sync.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_user.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_qpll_reset.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/fifo_packer_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/fifo_packer_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/fifo_packer_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/reorder_queue_output.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_reader.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_requester_mux.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sg_list_reader_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sg_list_reader_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sg_list_reader_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sg_list_requester.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_formatter_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_formatter_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_formatter_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_selector.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_monitor_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_monitor_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_monitor_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_writer.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/async_fifo.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/cross_domain_signal.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_brams_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_qpll_wrapper.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sync_fifo.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_rx_null_gen.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_rx_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_tx_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_tx_thrtl_ctl.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtx_cpllpd_ovrd.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_qpll_drp.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_rxeq_scan.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/syncff.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_cpllpd_ovrd.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_bram_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/ram_1clk_1w_1r.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/ram_2clk_1w_1r.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+remove_files  E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/ff.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -norecurse {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/xilinx.vh E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tlp.vh E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/functions.vh E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/ultrascale.vh E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/riffa.vh E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/altera.vh E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/schedules.vh E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/trellis.vh E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/types.vh E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/widths.vh}
+add_files -norecurse {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_multiplexer_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/channel_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/demux.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/reorder_queue_output.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/recv_credit_flow_ctrl.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_channel_gate.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/txr_engine_ultrascale.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_channel_gate_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_monitor_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_reader.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sync_fifo.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_data_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/register.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_wrapper_MC01.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/mux.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rxc_engine_classic.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_engine_ultrascale.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/translation_xilinx.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/fifo_packer_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/KXZ7C100_Gen2x8If128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/interrupt_controller.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/fifo_packer_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/ram_2clk_1w_1r.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rxr_engine_ultrascale.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sg_list_reader_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/reorder_queue_input.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_multiplexer.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/channel.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/ram_1clk_1w_1r.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_buffer_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rxc_engine_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/shiftreg.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_classic.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_multiplexer_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_selector.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_monitor_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rxr_engine_classic.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/channel_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/cross_domain_signal.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/translation_altera.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_engine_classic.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/txr_engine_classic.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/registers.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/counter.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/ff.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/reset_extender.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_hdr_fifo.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/fifo_packer_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/offset_to_mask.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/one_hot_mux.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/engine_layer.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/channel_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rxr_engine_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/riffa.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/reset_controller.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sg_list_requester.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/txc_engine_ultrascale.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_writer.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/fifo.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sg_list_reader_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_channel_gate_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rxc_engine_ultrascale.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_channel_gate_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/scsdpram.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rotate.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_alignment_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/syncff.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/txc_engine_classic.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/chnl_tester.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/reorder_queue.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/sg_list_reader_32.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_monitor_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/offset_flag_to_one_hot.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/rx_port_requester_mux.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/async_fifo_fwft.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_data_shift.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_engine_ultrascale.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_data_fifo.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_buffer_64.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/chnl_tester.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/interrupt.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/async_fifo.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_port_buffer_128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tx_multiplexer_32.v}
+add_files -norecurse {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_bram_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_qpll_drp.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_clock.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_qpll_reset.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_reset.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_wrapper.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_qpll_wrapper.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_rx_null_gen.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_common.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_rx_valid_filter_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_user.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_cpllpd_ovrd.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_pipe_lane.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_pipe_rate.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_wrapper.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_rx_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_tx_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie2_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_eq.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_rxeq_scan.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_core_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_rate.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtx_cpllpd_ovrd.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_pipe_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_sync.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_pipe_reset.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_pipe_misc.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_pipe_drp.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_bram_top_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_tx.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_tx_thrtl_ctl.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_rx.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_brams_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_drp.v}
+close_project
+open_project E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/common_functions.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+remove_files  E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/common_functions.v
+remove_files  E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/translation_altera.v
+remove_files  E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_clock.v
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [HDL 9-2216] Analyzing Verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/KXZ7C100_Gen2x8If128.v" into library work [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/KXZ7C100_Gen2x8If128.v:1]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/trellis.vh" included at line 43. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/KXZ7C100_Gen2x8If128.v:43]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/widths.vh" included at line 45. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/trellis.vh:45]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/types.vh" included at line 46. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/trellis.vh:46]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/functions.vh" included at line 47. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/trellis.vh:47]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/riffa.vh" included at line 44. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/KXZ7C100_Gen2x8If128.v:44]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/widths.vh" included at line 45. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/riffa.vh:45]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tlp.vh" included at line 45. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/KXZ7C100_Gen2x8If128.v:45]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/widths.vh" included at line 45. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tlp.vh:45]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/types.vh" included at line 46. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/tlp.vh:46]
+INFO: [HDL 9-1065] Parsing verilog file "E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/riffa_hdl/xilinx.vh" included at line 46. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/KXZ7C100_Gen2x8If128.v:46]
+[Fri Dec 22 19:36:32 2017] Launched synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z100ffg900-2
+INFO: [Netlist 29-17] Analyzing 115 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc]
+WARNING: [Vivado 12-180] No cells matched 'PCIeGen2x8If128/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i'. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'PCIeGen2x8If128/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'PCIeGen2x8If128/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'PCIeGen2x8If128/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'PCIeGen2x8If128/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'PCIeGen2x8If128/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[4].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'PCIeGen2x8If128/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[5].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'PCIeGen2x8If128/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[6].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'PCIeGen2x8If128/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[7].gt_wrapper_i/gtx_channel.gtxe2_channel_i'. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1563.820 ; gain = 477.215
+show_objects -name find_1 [get_cells -hierarchical "*pcie_block_i*" ]
+show_objects -name find_2 [get_cells -hierarchical "*gtxe2_channel_i*" ]
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Fri Dec 22 20:03:53 2017] Launched synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/synth_1/runme.log
+[Fri Dec 22 20:03:53 2017] Launched impl_1...
+Run output will be captured here: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128.xdc]
+Finished Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1563.820 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1563.820 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z100ffg900-2
+INFO: [Netlist 29-17] Analyzing 115 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc]
+Finished Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+current_design impl_1
+show_objects -name find_1 [get_cells -hierarchical "*pcie_block_i*" ]
+WARNING: [Vivado 12-180] No cells matched '*pcie_block_i*'.
+WARNING: [Coretcl 2-1122] No objects found.
+show_objects -name find_1 [get_cells -hierarchical "*pcie_block_i*" ]
+WARNING: [Vivado 12-180] No cells matched '*pcie_block_i*'.
+WARNING: [Coretcl 2-1122] No objects found.
+show_objects -name find_2 [get_cells -hierarchical "*PCIE_X0Y0*" ]
+WARNING: [Vivado 12-180] No cells matched '*PCIE_X0Y0*'.
+WARNING: [Coretcl 2-1122] No objects found.
+show_objects -name find_3 [get_sites "*PCIE_X0Y0*" ]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Fri Dec 22 20:16:20 2017] Launched synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/synth_1/runme.log
+[Fri Dec 22 20:16:20 2017] Launched impl_1...
+Run output will be captured here: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/impl_1/runme.log
+close_design
+close_design
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128.xdc]
+Finished Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2249.938 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 2249.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+add_files -norecurse E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/MGT_DRP_Controller.vhd
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie2_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_core_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_top.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_wrapper.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_pipe_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_top.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_rx_valid_filter_7x.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_rx.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_tx.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_common.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_bram_top_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gt_wrapper.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_eq.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_pipe_drp.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_pipe_rate.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_pipe_reset.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_pipe_lane.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_pipe_misc.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_drp.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_rate.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_reset.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_sync.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pipe_user.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_qpll_reset.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_brams_7x.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_qpll_wrapper.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_rx_null_gen.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_rx_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_tx_pipeline.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_axi_basic_tx_thrtl_ctl.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtx_cpllpd_ovrd.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_qpll_drp.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_rxeq_scan.v}
+remove_files  {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_gtp_cpllpd_ovrd.v E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/kxz7c100/ep_core/PCIeGen2x8If128_pcie_bram_7x.v}
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [xilinx.com:ip:pcie_7x:3.3-2148] pcie_7x_0: 11 - false 
+INFO: [Common 17-14] Message 'xilinx.com:ip:pcie_7x:3.3 2148' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+can't use floating-point value as operand of "<<"
+create_ip -name pcie_7x -vendor xilinx.com -library ip -version 3.3 -module_name PCIeGen2x8If128 -dir e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip
+set_property -dict [list CONFIG.Maximum_Link_Width {X8} CONFIG.Link_Speed {5.0_GT/s} CONFIG.Bar0_Size {1} CONFIG.Buf_Opt_BMA {true} CONFIG.IntX_Generation {false} CONFIG.en_ext_clk {false} CONFIG.mode_selection {Advanced} CONFIG.en_ext_ch_gt_drp {true} CONFIG.pl_interface {false} CONFIG.cfg_mgmt_if {false} CONFIG.rcv_msg_if {false} CONFIG.err_reporting_if {false} CONFIG.Interface_Width {128_bit} CONFIG.User_Clk_Freq {250} CONFIG.Device_ID {7028} CONFIG.Max_Payload_Size {256_bytes} CONFIG.Trgt_Link_Speed {4'h2} CONFIG.Legacy_Interrupt {NONE} CONFIG.pipe_mode_sim {None} CONFIG.PCIe_Blk_Locn {X0Y0} CONFIG.Trans_Buf_Pipeline {None} CONFIG.Ref_Clk_Freq {100_MHz}] [get_ips PCIeGen2x8If128]
+generate_target {instantiation_template} [get_files e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/PCIeGen2x8If128.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'PCIeGen2x8If128'...
+generate_target all [get_files  e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/PCIeGen2x8If128.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'PCIeGen2x8If128'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'PCIeGen2x8If128'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'PCIeGen2x8If128'...
+export_ip_user_files -of_objects [get_files e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/PCIeGen2x8If128.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/PCIeGen2x8If128.xci]
+launch_runs -jobs 4 PCIeGen2x8If128_synth_1
+[Fri Dec 22 20:36:06 2017] Launched PCIeGen2x8If128_synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/PCIeGen2x8If128_synth_1/runme.log
+export_simulation -of_objects [get_files e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/PCIeGen2x8If128.xci] -directory E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.ip_user_files/sim_scripts -ip_user_files_dir E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.ip_user_files -ipstatic_source_dir E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.cache/compile_simlib/modelsim} {questa=E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.cache/compile_simlib/questa} {riviera=E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.cache/compile_simlib/riviera} {activehdl=E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_project
+open_project E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'.
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Fri Dec 22 20:45:03 2017] Launched synth_1...
+Run output will be captured here: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/synth_1/runme.log
+[Fri Dec 22 20:45:03 2017] Launched impl_1...
+Run output will be captured here: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 552 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/source/PCIeGen2x8If128-PCIE_X0Y0.xdc:122]
+INFO: [Timing 38-2] Deriving generated clocks [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/source/PCIeGen2x8If128-PCIE_X0Y0.xdc:122]
+Finished Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128_early.xdc]
+Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128.xdc]
+Finished Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128.xdc]
+Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128_late.xdc]
+Finished Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/.Xil/Vivado-2592-GVI-QD02/dcp/KXZ7C100_Gen2x8If128_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2276.332 ; gain = 10.043
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2276.332 ; gain = 10.043
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 31 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2348.996 ; gain = 99.059
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2400.852 ; gain = 49.473
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z100ffg900-2
+INFO: [Project 1-454] Reading design checkpoint 'e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/PCIeGen2x8If128.dcp' for cell 'PCIeGen2x8If128_i'
+INFO: [Netlist 29-17] Analyzing 552 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/source/PCIeGen2x8If128-PCIE_X0Y0.xdc] for cell 'PCIeGen2x8If128_i/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/source/PCIeGen2x8If128-PCIE_X0Y0.xdc:122]
+INFO: [Timing 38-2] Deriving generated clocks [e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/source/PCIeGen2x8If128-PCIE_X0Y0.xdc:122]
+Finished Parsing XDC File [e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/source/PCIeGen2x8If128-PCIE_X0Y0.xdc] for cell 'PCIeGen2x8If128_i/inst'
+Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc]
+Finished Parsing XDC File [E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/src/system.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'e:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.srcs/sources_1/ip/PCIeGen2x8If128/PCIeGen2x8If128.dcp'
+Sourcing Tcl File [C:/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'PCIeGen2x8If128_i/inst/inst/phy_lnk_up_cdc'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'PCIeGen2x8If128_i/inst/inst/phy_lnk_up_cdc'
+Sourcing Tcl File [C:/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'PCIeGen2x8If128_i/inst/inst/pl_received_hot_rst_cdc'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2016.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'PCIeGen2x8If128_i/inst/inst/pl_received_hot_rst_cdc'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 31 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2400.852 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 22 20:53:00 2017] Launched impl_1...
+Run output will be captured here: E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/impl_1/runme.log
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Jan 23 2017-19:37:29
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000013ccf2fa01]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/000013ccf2fa01]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000013ccf2fa01
+set_property PROGRAM.FILE {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/impl_1/KXZ7C100_Gen2x8If128.bit} [lindex [get_hw_devices xc7z100_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z100_1] 0]
+INFO: [Labtools 27-1434] Device xc7z100 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROGRAM.FILE {E:/workspace/KXZ7C01/ProductCD/PCIE/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/impl_1/KXZ7C100_Gen2x8If128.bit} [lindex [get_hw_devices xc7z100_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z100_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2400.852 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+INFO: [Labtools 27-1434] Device xc7z100 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+WARNING: [Labtoolstcl 44-130] No matching hw_ilas were found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 22 21:25:02 2017...

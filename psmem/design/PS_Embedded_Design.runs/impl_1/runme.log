@@ -1,0 +1,533 @@
+
+*** Running vivado
+    with args -log embedded_design.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source embedded_design.tcl -notrace
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source embedded_design.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_processing_system7_0_0/ps_subsys_processing_system7_0_0.xdc] for cell 'ps_subsys_i/proc_arm/inst'
+Finished Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_processing_system7_0_0/ps_subsys_processing_system7_0_0.xdc] for cell 'ps_subsys_i/proc_arm/inst'
+Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_axi_iic_0_0/ps_subsys_axi_iic_0_0_board.xdc] for cell 'ps_subsys_i/axi_iic_main/U0'
+Finished Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_axi_iic_0_0/ps_subsys_axi_iic_0_0_board.xdc] for cell 'ps_subsys_i/axi_iic_main/U0'
+Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_proc_sys_reset_0_0/ps_subsys_proc_sys_reset_0_0_board.xdc] for cell 'ps_subsys_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_proc_sys_reset_0_0/ps_subsys_proc_sys_reset_0_0_board.xdc] for cell 'ps_subsys_i/proc_sys_reset_0/U0'
+Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_proc_sys_reset_0_0/ps_subsys_proc_sys_reset_0_0.xdc] for cell 'ps_subsys_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_proc_sys_reset_0_0/ps_subsys_proc_sys_reset_0_0.xdc] for cell 'ps_subsys_i/proc_sys_reset_0/U0'
+Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_axi_uartlite_0_0/ps_subsys_axi_uartlite_0_0_board.xdc] for cell 'ps_subsys_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_axi_uartlite_0_0/ps_subsys_axi_uartlite_0_0_board.xdc] for cell 'ps_subsys_i/axi_uartlite_0/U0'
+Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_axi_uartlite_0_0/ps_subsys_axi_uartlite_0_0.xdc] for cell 'ps_subsys_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [e:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_axi_uartlite_0_0/ps_subsys_axi_uartlite_0_0.xdc] for cell 'ps_subsys_i/axi_uartlite_0/U0'
+Parsing XDC File [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc]
+WARNING: [Vivado 12-584] No ports matched 'hdmi_out_clk'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_vsync'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_hsync'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data_e'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[0]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[1]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[2]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[3]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[4]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[5]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[6]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[7]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[8]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[9]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[10]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[11]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[12]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[13]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[14]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'hdmi_data[15]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spdif'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_mclk'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_bclk'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_lrclk'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_sdata_out'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'i2s_sdata_in'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_switches[0]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_switches[1]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_switches[2]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dip_switches[3]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'push_buttons[0]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'push_buttons[1]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'push_buttons[2]'. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.srcs/system.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 701.652 ; gain = 454.258
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z100'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.327 . Memory (MB): peak = 843.504 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 13381fe9d
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1b921e0d9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 1187.195 ; gain = 0.004
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 113 cells.
+Phase 2 Constant propagation | Checksum: ac362d9a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.346 . Memory (MB): peak = 1187.195 ; gain = 0.004
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 263 unconnected nets.
+INFO: [Opt 31-11] Eliminated 179 unconnected cells.
+Phase 3 Sweep | Checksum: 9b6d2ece
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.676 . Memory (MB): peak = 1187.195 ; gain = 0.004
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 1 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 486322a7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.920 . Memory (MB): peak = 1187.195 ; gain = 0.004
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1187.195 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 486322a7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.941 . Memory (MB): peak = 1187.195 ; gain = 0.004
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 486322a7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1187.195 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 33 Warnings, 33 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1187.195 ; gain = 485.543
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1187.195 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1/embedded_design_opt.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1/embedded_design_drc_opted.rpt.
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z100'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1249.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f4bfaf5f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 163307934
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 163307934
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1249.020 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 163307934
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 16dcd2598
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 16dcd2598
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 136f32ab3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: b9ffe7f0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: b9ffe7f0
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 1587a3d08
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1e7ccc196
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 2209ba9c4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 2209ba9c4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.020 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 2209ba9c4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.020 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=6.046. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1d5bc8ec5
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.355 ; gain = 8.336
+Phase 4.1 Post Commit Optimization | Checksum: 1d5bc8ec5
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.355 ; gain = 8.336
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1d5bc8ec5
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.355 ; gain = 8.336
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1d5bc8ec5
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.355 ; gain = 8.336
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: f4f07f73
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.355 ; gain = 8.336
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: f4f07f73
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.355 ; gain = 8.336
+Ending Placer Task | Checksum: b8ab4c4f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1257.355 ; gain = 8.336
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 33 Warnings, 33 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1257.355 ; gain = 70.160
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.171 . Memory (MB): peak = 1257.355 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1/embedded_design_placed.dcp' has been generated.
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1257.355 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1257.355 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1257.355 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z100'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: a7964e5f ConstDB: 0 ShapeSum: 1114fdf0 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1387e86c1
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:20 . Memory (MB): peak = 1570.250 ; gain = 229.969
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1387e86c1
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:20 . Memory (MB): peak = 1570.250 ; gain = 229.969
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1387e86c1
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:20 . Memory (MB): peak = 1570.250 ; gain = 229.969
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1387e86c1
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:20 . Memory (MB): peak = 1570.250 ; gain = 229.969
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1c82aec5e
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:21 . Memory (MB): peak = 1625.828 ; gain = 285.547
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=6.215  | TNS=0.000  | WHS=-0.262 | THS=-89.706|
+
+Phase 2 Router Initialization | Checksum: 17fe8cf05
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1743e2cfa
+
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 181
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 19d45f33d
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.766  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: fcf94231
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+Phase 4 Rip-up And Reroute | Checksum: fcf94231
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: fcf94231
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: fcf94231
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+Phase 5 Delay and Skew Optimization | Checksum: fcf94231
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 13529b557
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.810  | TNS=0.000  | WHS=0.068  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 13529b557
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+Phase 6 Post Hold Fix | Checksum: 13529b557
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:22 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0832166 %
+  Global Horizontal Routing Utilization  = 0.0701245 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 13da3fc43
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:23 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 13da3fc43
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:23 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 176428942
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:23 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.810  | TNS=0.000  | WHS=0.068  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 176428942
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:23 . Memory (MB): peak = 1625.828 ; gain = 285.547
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:23 . Memory (MB): peak = 1625.828 ; gain = 285.547
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+51 Infos, 33 Warnings, 33 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:40 ; elapsed = 00:01:25 . Memory (MB): peak = 1625.828 ; gain = 368.473
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 1625.828 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1/embedded_design_routed.dcp' has been generated.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1/embedded_design_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1/embedded_design_methodology_drc_routed.rpt.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Command: report_power -file embedded_design_power_routed.rpt -pb embedded_design_power_summary_routed.pb -rpx embedded_design_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+61 Infos, 33 Warnings, 33 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+Command: write_bitstream -force -no_partial_bitfile embedded_design.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z100'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z100'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 123353888 bits.
+Writing bitstream ./embedded_design.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sun Dec 03 09:54:30 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+69 Infos, 33 Warnings, 33 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2068.602 ; gain = 442.773
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 03 09:54:30 2017...

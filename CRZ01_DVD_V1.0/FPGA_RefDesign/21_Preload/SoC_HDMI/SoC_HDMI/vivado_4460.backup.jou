@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Dec 22 15:39:15 2017
+# Process ID: 4460
+# Current directory: E:/FPGA_demo/Z7/SoC_HDMI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5896 E:\FPGA_demo\Z7\SoC_HDMI\PS_Embedded_Design.xpr
+# Log file: E:/FPGA_demo/Z7/SoC_HDMI/vivado.log
+# Journal file: E:/FPGA_demo/Z7/SoC_HDMI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/FPGA_demo/Z7/SoC_HDMI/PS_Embedded_Design.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/FPGA_demo/Z7/SoC_HDMI/PS_Embedded_Design.runs/impl_1/embedded_design.bit} [lindex [get_hw_devices xc7z100_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z100_1] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 1] -mem_dev [lindex [get_cfgmem_parts {s25fl128s-1.8v-qspi-x4-single}] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROGRAM.FILE {E:/FPGA_demo/Z7/SoC_HDMI/PS_Embedded_Design.runs/impl_1/embedded_design.bit} [lindex [get_hw_devices xc7z100_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z100_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+launch_sdk -workspace E:/FPGA_demo/Z7/SoC_HDMI/PS_Embedded_Design.sdk -hwspec E:/FPGA_demo/Z7/SoC_HDMI/PS_Embedded_Design.sdk/embedded_design.hdf

@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jan 21 00:07:11 2020
+# Process ID: 3368
+# Current directory: D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3252 D:\BaiduNetdiskDownload\crz01\SoC_HDMI\SoC_HDMI\PS_Embedded_Design.xpr
+# Log file: D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/vivado.log
+# Journal file: D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.xpr
+INFO: [Project 1-313] Project file moved from 'D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/14_QSPI_HDMI/SoC_HDMI/SoC_HDMI' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 772.656 ; gain = 61.793
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jan 21 00:07:35 2020] Launched synth_1...
+Run output will be captured here: D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.runs/synth_1/runme.log
+[Tue Jan 21 00:07:35 2020] Launched impl_1...
+Run output will be captured here: D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 257 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z100ffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/.Xil/Vivado-3368-HIH-D-6446/dcp0/embedded_design_board.xdc]
+Finished Parsing XDC File [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/.Xil/Vivado-3368-HIH-D-6446/dcp0/embedded_design_board.xdc]
+Parsing XDC File [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/.Xil/Vivado-3368-HIH-D-6446/dcp0/embedded_design_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_axi_hdmi_tx_0_0/axi_hdmi_tx_constr.xdc:2]
+INFO: [Timing 38-2] Deriving generated clocks [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_axi_hdmi_tx_0_0/axi_hdmi_tx_constr.xdc:2]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1825.816 ; gain = 567.422
+INFO: [Timing 38-2] Deriving generated clocks [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ip/ps_subsys_clk_wiz_0_0/ps_subsys_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/.Xil/Vivado-3368-HIH-D-6446/dcp0/embedded_design_early.xdc]
+Parsing XDC File [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/.Xil/Vivado-3368-HIH-D-6446/dcp0/embedded_design.xdc]
+Finished Parsing XDC File [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/.Xil/Vivado-3368-HIH-D-6446/dcp0/embedded_design.xdc]
+Parsing XDC File [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/.Xil/Vivado-3368-HIH-D-6446/dcp0/embedded_design_late.xdc]
+Finished Parsing XDC File [D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/.Xil/Vivado-3368-HIH-D-6446/dcp0/embedded_design_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1825.816 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1825.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:36 . Memory (MB): peak = 1988.781 ; gain = 1165.211
+open_bd_design {D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ps_subsys.bd}
+Adding cell -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core
+Adding cell -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core
+Adding cell -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_hdmi_dma
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - proc_arm
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_arm/FCLK_CLK0(clk) and /axi_hdmi_clkgen/drp_clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /proc_arm/FCLK_CLK1(clk) and /axi_hdmi_clkgen/clk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /axi_spdif_tx_core/spdif_data_clk(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <ps_subsys> from BD file <D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.srcs/sources_1/bd/ps_subsys/ps_subsys.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2030.969 ; gain = 13.727
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+write_hwdef -force  -file D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.sdk/embedded_design.hdf
+launch_sdk -workspace D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.sdk -hwspec D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.sdk/embedded_design.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.sdk -hwspec D:/BaiduNetdiskDownload/crz01/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.sdk/embedded_design.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

@@ -1,0 +1,7 @@
+此说明是Xilinx的SDK 2016.4的一个bug的解决方法，详见Xilinx的AR# 68503。
+
+使用方法:
+1.  使用本文件夹中的 xmdterm.tcl 替换原SDK安装目录中的同名文件:
+    <SDK_installation_directory>/SDK/2016.4/scripts/xmd/xmdterm.tcl
+
+2.  重启SDK，使新的设置生效.

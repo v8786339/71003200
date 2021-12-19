@@ -1,0 +1,8 @@
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/FPGA_demo/Z7/DDR3_Mem_900MHz_PL_console/vivado_proj/ddr3_memtest.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Dec 02 20:09:02 2017...

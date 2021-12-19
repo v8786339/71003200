@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]E:\workspace\KXZ7C01\ProductCD\SoC_HDMI\PS_Embedded_Design.sdk\FSBL\Debug\FSBL.elf
+	E:\workspace\KXZ7C01\ProductCD\SoC_HDMI\PS_Embedded_Design.runs\impl_1\embedded_design.bit
+	E:\workspace\KXZ7C01\ProductCD\SoC_HDMI\PS_Embedded_Design.sdk\vHDMI\Debug\vHDMI.elf
+}

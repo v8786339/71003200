@@ -1,0 +1,15 @@
+vhdl xil_defaultlib  \
+"../../../bd/ps_subsys/ip/ps_subsys_axi_iic_0_0/sim/ps_subsys_axi_iic_0_0.vhd" \
+"../../../bd/ps_subsys/ip/ps_subsys_proc_sys_reset_0_0/sim/ps_subsys_proc_sys_reset_0_0.vhd" \
+"../../../bd/ps_subsys/ipshared/0229/common/dma_fifo.vhd" \
+"../../../bd/ps_subsys/ipshared/0229/common/pl330_dma_fifo.vhd" \
+"../../../bd/ps_subsys/ipshared/0229/common/axi_streaming_dma_tx_fifo.vhd" \
+"../../../bd/ps_subsys/ipshared/0229/common/axi_ctrlif.vhd" \
+"../../../bd/ps_subsys/ipshared/0229/tx_package.vhd" \
+"../../../bd/ps_subsys/ipshared/0229/tx_encoder.vhd" \
+"../../../bd/ps_subsys/ipshared/0229/axi_spdif_tx.vhd" \
+"../../../bd/ps_subsys/ip/ps_subsys_axi_spdif_tx_0_0/sim/ps_subsys_axi_spdif_tx_0_0.vhd" \
+"../../../bd/ps_subsys/ip/ps_subsys_axi_vdma_0_0/sim/ps_subsys_axi_vdma_0_0.vhd" \
+"../../../bd/ps_subsys/ip/ps_subsys_axi_uartlite_0_0/sim/ps_subsys_axi_uartlite_0_0.vhd" \
+
+nosort

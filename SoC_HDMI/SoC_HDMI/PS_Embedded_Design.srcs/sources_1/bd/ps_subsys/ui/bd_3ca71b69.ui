@@ -1,0 +1,99 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 470 -defaultsOSRD
+preplace port IIC_MAIN -pg 1 -y 770 -defaultsOSRD
+preplace port spdif -pg 1 -y 20 -defaultsOSRD
+preplace port hdmi_vsync -pg 1 -y 120 -defaultsOSRD
+preplace port hdmi_hsync -pg 1 -y 100 -defaultsOSRD
+preplace port pl_uart -pg 1 -y 900 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 490 -defaultsOSRD
+preplace port hdmi_data_e -pg 1 -y 140 -defaultsOSRD
+preplace port hdmi_out_clk -pg 1 -y 80 -defaultsOSRD
+preplace port CLK100M -pg 1 -y 590 -defaultsOSRD
+preplace portBus ps_intr_10 -pg 1 -y 1140 -defaultsOSRD
+preplace portBus ps_intr_11 -pg 1 -y 1160 -defaultsOSRD
+preplace portBus ps_intr_12 -pg 1 -y 1180 -defaultsOSRD
+preplace portBus ps_intr_13 -pg 1 -y 1200 -defaultsOSRD
+preplace portBus ps_intr_0 -pg 1 -y 940 -defaultsOSRD
+preplace portBus ps_intr_1 -pg 1 -y 960 -defaultsOSRD
+preplace portBus hdmi_data -pg 1 -y 160 -defaultsOSRD
+preplace portBus ps_intr_2 -pg 1 -y 980 -defaultsOSRD
+preplace portBus ps_intr_3 -pg 1 -y 1000 -defaultsOSRD
+preplace portBus ps_intr_4 -pg 1 -y 1020 -defaultsOSRD
+preplace portBus ps_intr_5 -pg 1 -y 1040 -defaultsOSRD
+preplace portBus ps_intr_6 -pg 1 -y 1060 -defaultsOSRD
+preplace portBus ps_intr_7 -pg 1 -y 1080 -defaultsOSRD
+preplace portBus ps_intr_8 -pg 1 -y 1100 -defaultsOSRD
+preplace portBus ps_intr_9 -pg 1 -y 1120 -defaultsOSRD
+preplace inst axi_hdmi_clkgen -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace inst axi_hdmi_core -pg 1 -lvl 5 -y 220 -defaultsOSRD
+preplace inst proc_arm -pg 1 -lvl 5 -y 550 -defaultsOSRD
+preplace inst axi_iic_main -pg 1 -lvl 5 -y 780 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y 1090 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst axi_hdmi_dma -pg 1 -lvl 3 -y 370 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 5 -y 910 -defaultsOSRD
+preplace inst axi_hdmi_interconnect -pg 1 -lvl 4 -y 550 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 3 -y 580 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 2 -y 210 -defaultsOSRD
+preplace inst axi_spdif_tx_core -pg 1 -lvl 4 -y 300 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 5 1 NJ
+preplace netloc In2_1 1 0 4 NJ 980 NJ 980 NJ 980 NJ
+preplace netloc axi_hdmi_core_hdmi_16_data_e 1 5 1 NJ
+preplace netloc axi_interconnect_1_M05_AXI 1 2 3 660 220 1170J 190 1520J
+preplace netloc axi_hdmi_dma_M_AXI_MM2S 1 3 1 1200
+preplace netloc axi_interconnect_1_M01_AXI 1 2 1 640
+preplace netloc axi_spdif_tx_core_spdif_tx_o 1 4 2 1530J 10 2130J
+preplace netloc axi_iic_0_iic2intc_irpt 1 3 3 1230 710 NJ 710 2090
+preplace netloc In11_1 1 0 4 NJ 1160 NJ 1160 NJ 1160 NJ
+preplace netloc axi_interconnect_1_M04_AXI 1 2 2 NJ 240 N
+preplace netloc axi_spdif_tx_0_DMA_REQ 1 4 1 1540
+preplace netloc ARESETN_1 1 1 1 360
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 0 500 NJ 500 NJ 500 1230J 420 NJ 420 2100
+preplace netloc In5_1 1 0 4 NJ 1040 NJ 1040 NJ 1040 NJ
+preplace netloc axi_hdmi_core_m_axis_mm2s_fsync 1 2 4 700 20 NJ 20 1610 20 2100
+preplace netloc axi_hdmi_core_hdmi_16_data 1 5 1 NJ
+preplace netloc In13_1 1 0 4 NJ 1200 NJ 1200 NJ 1200 NJ
+preplace netloc In9_1 1 0 4 NJ 1120 NJ 1120 NJ 1120 NJ
+preplace netloc In0_1 1 0 4 NJ 940 NJ 940 NJ 940 NJ
+preplace netloc axi_interconnect_1_M02_AXI 1 2 3 660J 210 1120J 100 1630
+preplace netloc processing_system7_0_DMA0_ACK 1 3 3 1220 30 NJ 30 2090
+preplace netloc axi_hdmi_core_m_axis_mm2s_tready 1 3 2 1180 160 1570J
+preplace netloc xlconcat_0_dout 1 4 1 1630
+preplace netloc axi_hdmi_core_hdmi_16_hsync 1 5 1 NJ
+preplace netloc In12_1 1 0 4 NJ 1180 NJ 1180 NJ 1180 NJ
+preplace netloc In8_1 1 0 4 NJ 1100 NJ 1100 NJ 1100 NJ
+preplace netloc In6_1 1 0 4 NJ 1060 NJ 1060 NJ 1060 NJ
+preplace netloc In3_1 1 0 4 NJ 1000 NJ 1000 NJ 1000 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ
+preplace netloc S00_AXI_1 1 1 5 380 430 650J 0 NJ 0 NJ 0 2120
+preplace netloc axi_clkgen_0_clk_0 1 3 2 1110 80 1600J
+preplace netloc axi_hdmi_dma_m_axis_mm2s_tkeep 1 3 2 1150 130 1590J
+preplace netloc In7_1 1 0 4 NJ 1080 NJ 1080 NJ 1080 NJ
+preplace netloc clk_wiz_0_clk_out1 1 3 1 1220
+preplace netloc axi_uartlite_0_UART 1 5 1 NJ
+preplace netloc axi_iic_0_IIC 1 5 1 2120J
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 1530
+preplace netloc axi_hdmi_dma_m_axis_mm2s_tlast 1 3 2 1190 170 1580J
+preplace netloc axi_hdmi_core_hdmi_16_vsync 1 5 1 NJ
+preplace netloc axi_hdmi_core_hdmi_out_clk 1 5 1 NJ
+preplace netloc axi_interconnect_1_M03_AXI 1 2 1 640
+preplace netloc M00_ARESETN_1 1 1 4 370 440 690 640 1240 430 1610
+preplace netloc axi_hdmi_dma_m_axis_mm2s_tvalid 1 3 2 1140 90 1620J
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 0 70 350 450 680 520 1210 140 1560 680 2130
+preplace netloc axi_interconnect_1_M00_AXI 1 2 3 670 200 1160J 180 1550J
+preplace netloc axi_hdmi_dma_m_axis_mm2s_tdata 1 3 2 1130 120 1630J
+preplace netloc In10_1 1 0 4 NJ 1140 NJ 1140 NJ 1140 NJ
+preplace netloc In4_1 1 0 4 NJ 1020 NJ 1020 NJ 1020 NJ
+preplace netloc processing_system7_0_FCLK_CLK1 1 2 4 710 510 1190J 410 NJ 410 2110
+preplace netloc axi_hdmi_dma_mm2s_introut 1 3 1 1150
+preplace netloc In1_1 1 0 4 NJ 960 NJ 960 NJ 960 NJ
+levelinfo -pg 1 -20 180 510 910 1380 1860 2150 -top -10 -bot 1300
+",
+}
+{
+   da_axi4_cnt: "2",
+   da_board_cnt: "1",
+}

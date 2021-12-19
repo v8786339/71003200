@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jan 16 00:34:14 2020
+# Process ID: 4580
+# Current directory: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/21_Preload/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.runs/impl_1
+# Command line: vivado.exe -log embedded_design.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source embedded_design.tcl -notrace
+# Log file: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/21_Preload/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.runs/impl_1/embedded_design.vdi
+# Journal file: D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/21_Preload/SoC_HDMI/SoC_HDMI/PS_Embedded_Design.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source embedded_design.tcl -notrace

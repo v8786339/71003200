@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 01 16:15:04 2017
+# Process ID: 30344
+# Current directory: E:/workspace/KXZ7C01/LED_Switch/vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30268 E:\workspace\KXZ7C01\LED_Switch\vivado\LED_Switch.xpr
+# Log file: E:/workspace/KXZ7C01/LED_Switch/vivado/vivado.log
+# Journal file: E:/workspace/KXZ7C01/LED_Switch/vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/workspace/KXZ7C01/LED_Switch/vivado/LED_Switch.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/000013ccf2fa01]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/000013ccf2fa01]
+open_hw_target
+set_property PROGRAM.FILE {E:/workspace/KXZ7C01/LED_Switch/vivado/LED_Switch.runs/impl_1/LED_Switch.bit} [lindex [get_hw_devices xc7z100_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROGRAM.FILE {E:/workspace/KXZ7C01/LED_Switch/vivado/LED_Switch.runs/impl_1/LED_Switch.bit} [lindex [get_hw_devices xc7z100_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z100_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z100_1] 0]
+set_property PROGRAM.FILE {E:/workspace/KXZ7C01/LED_Switch/vivado/LED_Switch.runs/impl_1/LED_Switch.bit} [lindex [get_hw_devices xc7z100_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z100_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z100_1] 0]
+file mkdir E:/workspace/KXZ7C01/LED_Switch/vivado/LED_Switch.sdk
+write_hwdef -force  -file E:/workspace/KXZ7C01/LED_Switch/vivado/LED_Switch.sdk/LED_Switch.hdf
+write_hwdef -force  -file E:/workspace/KXZ7C01/LED_Switch/vivado/LED_Switch.sdk/LED_Switch.hdf

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Dec 03 09:52:06 2017
+# Process ID: 14284
+# Current directory: E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1
+# Command line: vivado.exe -log embedded_design.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source embedded_design.tcl -notrace
+# Log file: E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1/embedded_design.vdi
+# Journal file: E:/workspace/KXZ7C01/SoC_Embedded_Design_PL_UART/PS_Embedded_Design.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source embedded_design.tcl -notrace

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z100ffg900-2" LaunchTime="1513775104">
+  <File Type="PA-TCL" Name="example_IBERT_SATA_10G.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="example_IBERT_SATA_10G_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="example_IBERT_SATA_10G.vds"/>
+  <File Type="RDS-UTIL" Name="example_IBERT_SATA_10G_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="example_IBERT_SATA_10G_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="example_IBERT_SATA_10G.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="example_IBERT_SATA_10G_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="example_IBERT_SATA_10G_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/IBERT_SATA_10G/IBERT_SATA_10G.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ipcore/IBERT_SATA_10G.srcs/sources_1/ip/IBERT_SATA_10G/IBERT_SATA_10G.xci"/>
+        <Attr Name="ImportTime" Val="1513774995"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/example_IBERT_SATA_10G.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/imports/xdc_7ser_gtx.txt"/>
+    <File Path="$PPRDIR/imports/example_top_verilog.txt"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="example_IBERT_SATA_10G"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/imports/example_IBERT_SATA_10G.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

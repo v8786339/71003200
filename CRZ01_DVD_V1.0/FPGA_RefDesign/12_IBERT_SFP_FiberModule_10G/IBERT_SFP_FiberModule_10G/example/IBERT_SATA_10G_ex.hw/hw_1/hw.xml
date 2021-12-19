@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2016.4 (64-bit)                     -->
+<!--                                                              -->
+<!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.        -->
+
+<hwsession version="1" minor="2">
+  <device name="xc7z100_1" gui_info=""/>
+  <ObjectList object_type="hw_device" gui_info="">
+    <Object name="xc7z100_1" gui_info="">
+      <Properties Property="PROBES.FILE" value=""/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/example_IBERT_SATA_10G.bit"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sio_link" gui_info="">
+    <Object name="1_1_0/IBERT/Quad_109/MGT_X0Y0/TX->1_1_0/IBERT/Quad_109/MGT_X0Y0/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="1_1_0/IBERT/Quad_109/MGT_X0Y0/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="1_1_0/IBERT/Quad_109/MGT_X0Y0/TX"/>
+      <Properties Property="DESCRIPTION" value="Found 0"/>
+      <Properties Property="LOGIC.MGT_ERRCNT_RESET_CTRL" value="0"/>
+      <Properties Property="LOOPBACK" value="None"/>
+    </Object>
+    <Object name="1_1_0/IBERT/Quad_109/MGT_X0Y1/TX->1_1_0/IBERT/Quad_109/MGT_X0Y1/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="1_1_0/IBERT/Quad_109/MGT_X0Y1/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="1_1_0/IBERT/Quad_109/MGT_X0Y1/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 1"/>
+      <Properties Property="LOGIC.MGT_ERRCNT_RESET_CTRL" value="0"/>
+      <Properties Property="LOOPBACK" value="None"/>
+    </Object>
+    <Object name="1_1_0/IBERT/Quad_109/MGT_X0Y2/TX->1_1_0/IBERT/Quad_109/MGT_X0Y2/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="1_1_0/IBERT/Quad_109/MGT_X0Y2/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="1_1_0/IBERT/Quad_109/MGT_X0Y2/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 2"/>
+      <Properties Property="LOGIC.MGT_ERRCNT_RESET_CTRL" value="0"/>
+      <Properties Property="LOOPBACK" value="None"/>
+    </Object>
+    <Object name="1_1_0/IBERT/Quad_109/MGT_X0Y3/TX->1_1_0/IBERT/Quad_109/MGT_X0Y3/RX" gui_info="">
+      <Attributes Attribute="RX_HANDLE" value="1_1_0/IBERT/Quad_109/MGT_X0Y3/RX"/>
+      <Attributes Attribute="TX_HANDLE" value="1_1_0/IBERT/Quad_109/MGT_X0Y3/TX"/>
+      <Properties Property="DESCRIPTION" value="Link 3"/>
+      <Properties Property="LOGIC.MGT_ERRCNT_RESET_CTRL" value="0"/>
+      <Properties Property="LOOPBACK" value="None"/>
+    </Object>
+  </ObjectList>
+  <ObjectList object_type="hw_sio_linkgroup" gui_info="">
+    <Object name="LINKGROUP_0" gui_info="">
+      <Attributes Attribute="LINK_HANDLE0" value="1_1_0/IBERT/Quad_109/MGT_X0Y0/TX->1_1_0/IBERT/Quad_109/MGT_X0Y0/RX"/>
+      <Properties Property="DESCRIPTION" value="Found Links"/>
+    </Object>
+    <Object name="LINKGROUP_1" gui_info="">
+      <Attributes Attribute="LINK_HANDLE0" value="1_1_0/IBERT/Quad_109/MGT_X0Y1/TX->1_1_0/IBERT/Quad_109/MGT_X0Y1/RX"/>
+      <Attributes Attribute="LINK_HANDLE1" value="1_1_0/IBERT/Quad_109/MGT_X0Y2/TX->1_1_0/IBERT/Quad_109/MGT_X0Y2/RX"/>
+      <Attributes Attribute="LINK_HANDLE2" value="1_1_0/IBERT/Quad_109/MGT_X0Y3/TX->1_1_0/IBERT/Quad_109/MGT_X0Y3/RX"/>
+      <Properties Property="DESCRIPTION" value="Link Group 1"/>
+    </Object>
+  </ObjectList>
+  <probeset name="hw project" active="false"/>
+</hwsession>

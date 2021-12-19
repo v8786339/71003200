@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="PCIeGen2x8If128_synth_1" LaunchDir="D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/15_PCIE_DMA_x8/PCIe_x8_DMA_128w250MHz_2.2.2/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/PCIeGen2x8If128_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/15_PCIE_DMA_x8/PCIe_x8_DMA_128w250MHz_2.2.2/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="PCIeGen2x8If128_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/BaiduNetdiskDownload/crz01/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/CRZ01_DVD_V1.0/FPGA_RefDesign/15_PCIE_DMA_x8/PCIe_x8_DMA_128w250MHz_2.2.2/PCIe_x8_DMA_128w250MHz_2.2.2/proj/PCIE_DMA.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="PCIeGen2x8If128_synth_1"/>
+	</Run>
+</Runs>
+

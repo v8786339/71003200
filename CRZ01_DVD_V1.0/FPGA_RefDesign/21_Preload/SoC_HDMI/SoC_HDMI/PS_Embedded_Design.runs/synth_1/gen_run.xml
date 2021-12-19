@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z100ffg900-2" LaunchTime="1579105653">
+  <File Type="PA-TCL" Name="embedded_design.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="embedded_design_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="embedded_design_reports.tcl"/>
+  <File Type="RDS-RDS" Name="embedded_design.vds"/>
+  <File Type="RDS-UTIL" Name="embedded_design_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="embedded_design_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="embedded_design.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="embedded_design_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="embedded_design_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/ps_subsys/ps_subsys.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/embedded_design.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="embedded_design"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/system.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

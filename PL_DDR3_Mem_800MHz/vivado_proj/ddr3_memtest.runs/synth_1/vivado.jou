@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Nov 01 18:12:48 2017
+# Process ID: 36420
+# Current directory: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/synth_1
+# Command line: vivado.exe -log TestDemo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TestDemo.tcl
+# Log file: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/synth_1/TestDemo.vds
+# Journal file: E:/workspace/KXZ7C01/DDR3_Mem_900MHz/vivado_proj/ddr3_memtest.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TestDemo.tcl -notrace

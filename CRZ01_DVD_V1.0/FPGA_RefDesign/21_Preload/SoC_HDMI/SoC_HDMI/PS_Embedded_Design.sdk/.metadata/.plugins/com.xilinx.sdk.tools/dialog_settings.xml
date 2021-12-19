@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="E:\FPGA_demo\CRZ01\14_QSPI_HDMI\TRD_PCIEx8_SoC_HDMI\ready_for_download\BOOT.mcs" key="embedded_design_hw_platform_0-imgFile"/>
+	<item value="embedded_design_hw_platform_0" key="programflash.hwplatform"/>
+	<item value="qspi_dual_parallel" key="embedded_design_hw_platform_0-flashType"/>
+	<item value="false" key="embedded_design_hw_platform_0-blankCheck"/>
+	<item value="true" key="embedded_design_hw_platform_0-verifyFlash"/>
+	<item value="" key="embedded_design_hw_platform_0-offSet"/>
+	<item value="" key="embedded_design_hw_platform_0-fsblFile"/>
+	<item value="Auto Detect" key="embedded_design_hw_platform_0-device"/>
+	<item value="Local" key="embedded_design_hw_platform_0-target"/>
+</section>
